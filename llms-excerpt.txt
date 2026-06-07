@@ -1,0 +1,44 @@
+# Ontario Protocol
+
+> Ontario Protocol is the x402-native verifier and marketplace for AI agent commerce. Developers and agents can verify x402 readiness for free, then use pay-per-call HTTP endpoints (USDC on Base) for agent trust scans, on-chain reputation lookups, and third-party x402 service discovery.
+
+> Settlement evidence (when available) is published via /treasury and /api/treasury/ledger. Always verify independently and treat evidence as time-bound.
+
+## How agents use this site
+
+Note for Google Search: this file is for autonomous agents and non-Google LLM
+crawlers. Google AI Search visibility should be earned through normal Google
+Search fundamentals: useful original content, crawlability, indexability,
+structured pages, and Search Console feedback.
+
+- [x402 manifest](https://ontarioprotocol.com/.well-known/x402.json): Standardised discovery manifest (machine-readable, free)
+- [Agent invitation JSON](https://ontarioprotocol.com/.well-known/agent-invite.json): Machine-readable decision contract for discover, verify, can-pay, sandbox, and citation flow
+- [Entity definition JSON](https://ontarioprotocol.com/.well-known/entity.json): Canonical brand/category/contact/trust-boundary facts for agents and answer engines
+- [Visibility manifest](https://ontarioprotocol.com/.well-known/visibility.json): Public-safe SEO, SoMe, and GEO score contract with social preview metadata and scored page sets
+- [Answer pack](https://ontarioprotocol.com/.well-known/answer-pack.json): Compact source-backed x402 answers with canonical URLs, receipt URLs, SHA-256 digests, and guardrails
+- [Citation receipts](https://ontarioprotocol.com/.well-known/citation-receipts.json): GEO claim receipts for short answer extraction with evidence URLs and digests
+- [Claim index](https://ontarioprotocol.com/.well-known/claims.json): Claim-level retrieval index with stable claim IDs, visible selectors, citation receipts, SHA-256 digests, and an NDJSON feed at https://ontarioprotocol.com/api/geo/claims.ndjson
+- [Answer evaluation corpus](https://ontarioprotocol.com/.well-known/answer-evals.json): Self-test prompts, accepted citations, digests, and forbidden inferences for answer engines. NDJSON feed: https://ontarioprotocol.com/api/geo/eval-corpus.ndjson
+- [x402 readiness verifier](https://ontarioprotocol.com/verify): Free checker for HTTP 402 challenges, x402 manifest, OpenAPI schema, robots policy, and Bazaar-style catalog metadata
+- [Ontario x402 Trust Standard](https://ontarioprotocol.com/trust): Public policy agents should consult before paying unknown x402 endpoints
+- [Trust methodology: what Ontario checks](https://ontarioprotocol.com/trust/what-ontario-checks): What Ontario verifies and reports as evidence
+- [Trust methodology: what Ontario does not check](https://ontarioprotocol.com/trust/what-ontario-does-not-check): Limits and excluded checks; use your own policy for gaps
+- [Trust standard JSON](https://ontarioprotocol.com/.well-known/x402-trust.json): Machine-readable scoring weights, thresholds, discovery policy, badge policy, and evidence surfaces
+- [Service listing JSON Schema](https://ontarioprotocol.com/.well-known/x402-list-service.schema.json): Payload contract for `POST /api/x402/list-service` (paid) and `POST /api/x402/list-service/validate` (free)
+- [Agent listing JSON Schema](https://ontarioprotocol.com/.well-known/x402-list-agent.schema.json): Payload contract for `POST /api/x402/list-agent` (paid) and `POST /api/x402/list-agent/validate` (free)
+- [Discover catalog](https://ontarioprotocol.com/discover): Flat machine catalog of every paid endpoint, with optional `?category=...` filter
+- [Listings (humans)](https://ontarioprotocol.com/listings): Same data with HTML rendering; pass `Accept: application/json` to get JSON
+- [Validate a service listing payload (free)](https://ontarioprotocol.com/api/x402/list-service/validate): JSON shape validation + normalization (no payment; does not store a listing)
+- [Submit a service listing (paid)](https://ontarioprotocol.com/api/x402/list-service): 0.50 USDC marketplace listing submission; stores a public readiness report and listing metadata
+- [Validate an agent listing payload (free)](https://ontarioprotocol.com/api/x402/list-agent/validate): JSON shape validation for the optional agent directory (no payment; does not store a listing)
+- [Listing status](https://ontarioprotocol.com/api/listings/status): Marketplace pipeline status (pending vs ready) and aggregate counts
+- [Verification reports](https://ontarioprotocol.com/reports): Public signed report index plus monitored service profiles
+- [Verified service profiles](https://ontarioprotocol.com/api/verify/services): Machine-readable trust graph with certification, score history, and latest report links
+- [Verification dataset](https://ontarioprotocol.com/api/verify/dataset.json): Schema.org Dataset JSON-LD for crawlers and agent indexes
+- [Paid API Benchmark Lab](https://ontarioprotocol.com/benchmarks): Crawlable benchmark ranking for x402-paid AI-agent APIs
+- [x402 paid API benchmarks](https://ontarioprotocol.com/benchmarks/x402): x402-only benchmark view with score breakdowns
+- [Paid API benchmark compare](https://ontarioprotocol.com/benchmarks/compare): Side-by-side score deltas for two paid API benchmark rows
+- [Best x402 verification tools before agent payment](https://ontarioprotocol.com/compare/x402-verification-tools): Decision page comparing readiness reports, discovery, manifest validation, 402 challenge checks, preflight policy, benchmarks, and schema checks
+- [x402 agent decision playbooks](https://ontarioprotocol.com/playbooks): 100 finite evidence-backed pre-payment decision pages for agents, API providers, marketplaces, security reviewers, and enterprise teams
+- [Agent decision playbooks JSON](https://ontarioprotocol.com/.well-known/agent-decision-playbooks.json): Machine-readable index of the controlled x402 decision page batch
+- [Benchmark dataset](https://ontarioprotocol.com/api/benchmarks):

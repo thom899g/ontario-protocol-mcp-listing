@@ -1,0 +1,148 @@
+{
+  "schema_version": "0.1.0",
+  "name": "ontario-protocol",
+  "display_name": "Ontario Protocol",
+  "description": "x402 marketplace for AI agent trust data and third-party service discovery. Pay-per-call USDC on Base.",
+  "homepage": "https://ontarioprotocol.com",
+  "license": "MIT",
+  "tools": [
+    {
+      "name": "discover",
+      "description": "List all x402-paid services known to Ontario Protocol. Free; agent should call this first to enumerate prices.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 100
+          }
+        }
+      },
+      "endpoint": "https://ontarioprotocol.com/discover",
+      "method": "GET"
+    },
+    {
+      "name": "agent-trust-scan",
+      "description": "Scan another agent's surface area and return a structured trust report. Costs 0.01 USDC.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "target_url"
+        ],
+        "properties": {
+          "agent_id": {
+            "type": "string"
+          },
+          "target_url": {
+            "type": "string"
+          }
+        }
+      },
+      "endpoint": "https://ontarioprotocol.com/api/x402/agent-trust-scan",
+      "method": "POST",
+      "x402_price_usdc": "0.01"
+    },
+    {
+      "name": "reputation-lookup",
+      "description": "Get aggregated reputation for an agent based on EAS attestations + scan history. Costs 0.001 USDC.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "agent_id"
+        ],
+        "properties": {
+          "agent_id": {
+            "type": "string"
+          }
+        }
+      },
+      "endpoint": "https://ontarioprotocol.com/api/x402/reputation/{agent_id}",
+      "method": "GET",
+      "x402_price_usdc": "0.001"
+    },
+    {
+      "name": "list-agent",
+      "description": "Submit an AI agent for inclusion in the Ontario directory. Costs 0.10 USDC.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "agent_card_url": {
+            "type": "string"
+          },
+          "owner_url": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "endpoint": "https://ontarioprotocol.com/api/x402/list-agent",
+      "method": "POST",
+      "x402_price_usdc": "0.10"
+    },
+    {
+      "name": "list-service",
+      "description": "Register a third-party x402 service in Ontario's marketplace. 0.50 USDC listing fee. 1.5% take rate applies on settlements routed through Ontario's proxy facilitator.",
+      "input_schema": {
+        "type": "object",
+        "required": [
+          "name",
+          "endpoint"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "endpoint": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "GET",
+              "POST"
+            ]
+          },
+          "price_usdc": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "owner_url": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "endpoint": "https://ontarioprotocol.com/api/x402/list-service",
+      "method": "POST",
+      "x402_price_usdc": "0.50"
+    }
+  ],
+  "generated_at": "2026-06-01T06:01:10.506523Z"
+}
