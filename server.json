@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "name": "ontario-protocol",
+  "display_name": "Ontario Protocol x402 pre-payment verifier",
+  "description": "Remote MCP and x402 tools for verifying paid agent endpoints before agents pay. Free readiness and can-pay tools first; paid trust, reputation, and listing tools only after policy allows.",
+  "homepage": "https://ontarioprotocol.com",
+  "license": "MIT",
+  "mcp_manifest": "https://ontarioprotocol.com/.well-known/mcp.json",
+  "mcp_endpoint": {
+    "transport": "streamable-http",
+    "url": "https://ontarioprotocol.com/mcp",
+    "method": "POST"
+  },
+  "x402_manifest": "https://ontarioprotocol.com/.well-known/x402.json",
+  "buyer_guide": "https://ontarioprotocol.com/.well-known/agent-buyer.json",
+  "discovery_catalog": "https://ontarioprotocol.com/discover",
+  "free_tools": [
+    "agent_can_pay",
+    "x402_readiness_verify",
+    "agent_verify_payment",
+    "sandbox_can_pay"
+  ],
+  "paid_tools": [
+    "agent_trust_scan",
+    "reputation_lookup",
+    "list_agent",
+    "list_service"
+  ],
+  "directory_description": "Ontario Protocol exposes MCP and x402 tools for verifying paid agent endpoints before agents pay. Start with free readiness and can-pay tools, then use paid trust, reputation, and listing tools only after policy allows."
+}
