@@ -1,0 +1,70 @@
+{
+  "name": "Ontario Protocol",
+  "site": "https://ontarioprotocol.com",
+  "description": "x402 marketplace for AI agent commerce: trust scans, reputation lookups, agent directory, third-party listings.",
+  "contact": "hello@ontarioprotocol.com",
+  "default_network": "base",
+  "default_asset": "USDC",
+  "manifest_url": "https://ontarioprotocol.com/.well-known/x402.json",
+  "discovery_url": "https://ontarioprotocol.com/discover",
+  "services": [
+    {
+      "id": "ontario.agent-trust-scan",
+      "name": "Agent Trust Scan",
+      "description": "Submit an agent's card URL or A2A endpoint, receive a structured trust report (security signals, identity claims, declared capabilities). Returns JSON.",
+      "endpoint": "https://ontarioprotocol.com/api/x402/agent-trust-scan",
+      "method": "POST",
+      "price_usdc": "0.01",
+      "category": "trust",
+      "tags": [
+        "trust",
+        "scan",
+        "ai-agent",
+        "security"
+      ]
+    },
+    {
+      "id": "ontario.reputation",
+      "name": "Agent Reputation Lookup",
+      "description": "Look up an agent's accumulated reputation (sourced from on-chain EAS attestations on Base + recent scan history).",
+      "endpoint": "https://ontarioprotocol.com/api/x402/reputation/<agent_id>",
+      "method": "GET",
+      "price_usdc": "0.001",
+      "category": "trust",
+      "tags": [
+        "reputation",
+        "eas",
+        "attestation"
+      ]
+    },
+    {
+      "id": "ontario.list-agent",
+      "name": "Submit Agent Listing",
+      "description": "Submit an AI agent for inclusion in the Ontario Protocol directory. Pays 0.10 USDC up front to deter spam.",
+      "endpoint": "https://ontarioprotocol.com/api/x402/list-agent",
+      "method": "POST",
+      "price_usdc": "0.10",
+      "category": "directory",
+      "tags": [
+        "directory",
+        "submit",
+        "agent"
+      ]
+    },
+    {
+      "id": "ontario.list-service",
+      "name": "List a Third-Party x402 Service",
+      "description": "Register your own x402-paid endpoint so AI agents discover it through Ontario Protocol's `/discover`. 0.50 USDC listing fee.",
+      "endpoint": "https://ontarioprotocol.com/api/x402/list-service",
+      "method": "POST",
+      "price_usdc": "0.50",
+      "category": "marketplace",
+      "tags": [
+        "marketplace",
+        "list",
+        "x402"
+      ]
+    }
+  ],
+  "generated_at": "2026-06-01T06:01:10.506147Z"
+}

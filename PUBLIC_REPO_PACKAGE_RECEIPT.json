@@ -1,0 +1,22 @@
+{
+  "created_for": "ontario_agent_hub_distribution",
+  "external_action_performed": false,
+  "intended_public_repo_name": "ontario-protocol-mcp-listing",
+  "source_root": "/Users/thomashansen/Desktop/ontarioprotocol",
+  "package_root": "/Users/thomashansen/Desktop/doomday/sovereign-builder/workspace/revenue/ontario-agent-hub-distribution/public-repo-package",
+  "files": [
+    "README.md",
+    "llms-excerpt.txt",
+    "mcp-server.json",
+    "x402-bazaar.json"
+  ],
+  "required_before_external_use": [
+    "secret scan this package",
+    "owner approves exact GitHub repo creation/push and MCP.Directory submission",
+    "write push/submission/watch receipts after execution"
+  ],
+  "blocked_until_approval": true,
+  "market_evidence_changed": "no: local package only, not market evidence",
+  "route_this_unblocks": "MCP.Directory GitHub Repository URL requirement",
+  "related_packet": "templates/control-repo/REVENUE_NEXT_EXTERNAL_ACTION.json"
+}
