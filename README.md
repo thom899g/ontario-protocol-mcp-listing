@@ -16,6 +16,8 @@ Discovery: <https://ontarioprotocol.com/discover>
 
 Free readiness checker: <https://ontarioprotocol.com/verify>
 
+Free owner next step: <https://ontarioprotocol.com/api/mcp-owner-next-step>
+
 ## Recommended Directory Description
 
 Ontario Protocol exposes MCP and x402 tools for verifying paid agent endpoints before agents pay. Start with free readiness and can-pay tools, then use paid trust, reputation, and listing tools only after policy allows.
@@ -36,6 +38,17 @@ Ontario Protocol exposes MCP and x402 tools for verifying paid agent endpoints b
 ## Listing Purpose
 
 This package exists to support agent/tool directory review. It is not a separate production deployment, not a payment collector, and not a legal or financial guarantee. Ontario provides observable readiness signals; agents should still enforce their own budget, wallet, timeout, and policy controls before payment.
+
+## Free-First Owner Path
+
+If you run an MCP or x402 endpoint and found Ontario through a directory, start here before any paid action:
+
+- owner handoff route: `GET https://ontarioprotocol.com/api/mcp-owner-next-step`
+- human owner page: <https://ontarioprotocol.com/docs/mcp-owner-paid-call>
+- free mini-check request: `POST https://ontarioprotocol.com/api/mcp-mini-check`
+- free listing validation: `POST https://ontarioprotocol.com/api/x402/list-service/validate`
+
+The paid `list-service` route is only for owners who want a public Ontario catalog listing after the free checks are useful.
 
 ## Verification
 

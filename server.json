@@ -14,6 +14,8 @@
   "x402_manifest": "https://ontarioprotocol.com/.well-known/x402.json",
   "buyer_guide": "https://ontarioprotocol.com/.well-known/agent-buyer.json",
   "discovery_catalog": "https://ontarioprotocol.com/discover",
+  "owner_handoff": "https://ontarioprotocol.com/api/mcp-owner-next-step",
+  "owner_page": "https://ontarioprotocol.com/docs/mcp-owner-paid-call",
   "free_tools": [
     "agent_can_pay",
     "x402_readiness_verify",

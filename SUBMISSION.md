@@ -27,6 +27,8 @@ Ontario Protocol helps autonomous agents and developers avoid unsafe paid API ca
 - x402 manifest: <https://ontarioprotocol.com/.well-known/x402.json>
 - Agent buyer guide: <https://ontarioprotocol.com/.well-known/agent-buyer.json>
 - Free verifier: <https://ontarioprotocol.com/verify>
+- Free owner handoff: <https://ontarioprotocol.com/api/mcp-owner-next-step>
+- Human owner page: <https://ontarioprotocol.com/docs/mcp-owner-paid-call>
 
 ## Category Suggestions
 
