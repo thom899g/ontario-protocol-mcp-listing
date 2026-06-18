@@ -60,7 +60,9 @@ curl -fsSL https://ontarioprotocol.com/.well-known/x402.json
 curl -fsSL https://ontarioprotocol.com/api/demand/stats
 ```
 
-The remote MCP endpoint is POST-only. A `GET /mcp` request may return `405 Method Not Allowed`; that is expected and should not be treated as downtime.
+The remote MCP endpoint accepts `POST /mcp` for JSON-RPC MCP calls. `GET /mcp` returns a `200` JSON discovery document with the manifest URL, POST usage, free owner next-step, and paid listing boundary.
+
+For a full ingestion sequence, see [Directory Crawler Guide](DIRECTORY_CRAWLER_GUIDE.md).
 
 ## Evidence Contract
 

@@ -9,8 +9,10 @@
   "mcp_endpoint": {
     "transport": "streamable-http",
     "url": "https://ontarioprotocol.com/mcp",
-    "method": "POST"
+    "method": "POST",
+    "get_discovery": "https://ontarioprotocol.com/mcp"
   },
+  "mcp_manifest_alias": "https://ontarioprotocol.com/.well-known/mcp",
   "x402_manifest": "https://ontarioprotocol.com/.well-known/x402.json",
   "buyer_guide": "https://ontarioprotocol.com/.well-known/agent-buyer.json",
   "discovery_catalog": "https://ontarioprotocol.com/discover",
