@@ -68,6 +68,8 @@ For ranked owner-reviewed submission targets and evidence criteria, see [Directo
 
 For observed external MCP crawler compatibility, see [Crawler Compatibility Receipt](CRAWLER_COMPATIBILITY.md).
 
+For public accepted-listing evidence on agent-tools.cloud, see [agent-tools.cloud Listing Evidence](AGENT_TOOLS_LISTING_EVIDENCE.md).
+
 ## Evidence Contract
 
 A real market signal for this distribution test must be one of: accepted listing, listing rejection, directory click, crawler/registry fetch, inbound listing attempt, signup, paid x402 call, or payment. Drafts and local reports do not count.

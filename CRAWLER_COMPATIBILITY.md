@@ -81,3 +81,7 @@ It does not prove:
 - legal or financial endorsement
 
 Useful next evidence would be a directory listing, explicit rejection, release asset download, owner handoff call, listing validation call, or paid x402 attempt.
+
+Known listing evidence:
+
+- agent-tools.cloud listing: `https://agent-tools.cloud/services/ontario-protocol-ontarioprotocol-com-x402`
