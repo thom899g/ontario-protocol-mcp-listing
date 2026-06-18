@@ -2,6 +2,8 @@
 
 This guide is for MCP directories, x402 marketplaces, and agent-tool catalogs that want to index Ontario Protocol without manual contact.
 
+For a ranked owner-reviewed target list, see [Directory Target Shortlist](DIRECTORY_TARGETS.md).
+
 ## Canonical Fetch Order
 
 1. Fetch the MCP manifest:
@@ -82,4 +84,3 @@ Not enough by itself:
 - README changes
 - self-generated test calls
 - vague "looks promising"
-

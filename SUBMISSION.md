@@ -40,6 +40,10 @@ Ontario Protocol helps autonomous agents and developers avoid unsafe paid API ca
 - Security
 - Verification
 
+## Target Shortlist
+
+For ranked target directories and the evidence rule for each one, see [Directory Target Shortlist](DIRECTORY_TARGETS.md).
+
 ## External Action Boundary
 
 This packet is safe to use for allowed public directory submissions. It does not require payment and does not create accounts by itself. Any directory that requires account creation, paid promotion, private credentials, or manual maintainer contact should be treated as a separate approval boundary.
