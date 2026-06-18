@@ -4,15 +4,16 @@ Ontario Protocol has been observed responding successfully to external MCP direc
 
 This receipt is for MCP directories, x402 discovery systems, and agent-tool catalogs that want a quick compatibility check before indexing Ontario.
 
-## Observed External Crawler
+## Observed External Crawlers
 
-Source observed in Google Cloud Run logs:
+Sources observed in Google Cloud Run logs:
 
 ```text
 PRSM-MCP-Graph/1.0 (+https://prsm.network)
+agent-tools.cloud-crawler/0.1 (+https://agent-tools.cloud)
 ```
 
-Observed events:
+Observed PRSM events:
 
 | Timestamp | Method | Status | Endpoint |
 | --- | --- | ---: | --- |
@@ -20,6 +21,14 @@ Observed events:
 | 2026-06-18T14:16:05.908067Z | POST | 202 | `/mcp` |
 | 2026-06-18T14:16:06.022920Z | GET | 200 | `/mcp` |
 | 2026-06-18T14:16:06.033825Z | POST | 200 | `/mcp` |
+
+Observed agent-tools.cloud events:
+
+| Timestamp | Method | Status | Endpoint |
+| --- | --- | ---: | --- |
+| 2026-06-18T14:26:18.790373Z | POST | 200 | `/mcp` |
+| 2026-06-18T14:26:18.940381Z | POST | 202 | `/mcp` |
+| 2026-06-18T14:26:18.990981Z | POST | 200 | `/mcp` |
 
 ## Directory Probe Checklist
 
@@ -60,7 +69,7 @@ Endpoint owners who discover Ontario through a directory should use the free pat
 
 ## Evidence Boundary
 
-This receipt proves only that an external crawler reached the public MCP transport and received successful responses.
+This receipt proves only that external crawlers reached the public MCP transport and received successful responses.
 
 It does not prove:
 
