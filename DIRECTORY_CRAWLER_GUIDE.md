@@ -4,6 +4,8 @@ This guide is for MCP directories, x402 marketplaces, and agent-tool catalogs th
 
 For a ranked owner-reviewed target list, see [Directory Target Shortlist](DIRECTORY_TARGETS.md).
 
+For a concrete external crawler receipt, see [Crawler Compatibility Receipt](CRAWLER_COMPATIBILITY.md).
+
 ## Canonical Fetch Order
 
 1. Fetch the MCP manifest:

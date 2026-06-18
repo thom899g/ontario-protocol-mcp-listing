@@ -44,6 +44,10 @@ Ontario Protocol helps autonomous agents and developers avoid unsafe paid API ca
 
 For ranked target directories and the evidence rule for each one, see [Directory Target Shortlist](DIRECTORY_TARGETS.md).
 
+## Crawler Compatibility
+
+For observed external MCP crawler compatibility, see [Crawler Compatibility Receipt](CRAWLER_COMPATIBILITY.md).
+
 ## External Action Boundary
 
 This packet is safe to use for allowed public directory submissions. It does not require payment and does not create accounts by itself. Any directory that requires account creation, paid promotion, private credentials, or manual maintainer contact should be treated as a separate approval boundary.

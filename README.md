@@ -66,6 +66,8 @@ For a full ingestion sequence, see [Directory Crawler Guide](DIRECTORY_CRAWLER_G
 
 For ranked owner-reviewed submission targets and evidence criteria, see [Directory Target Shortlist](DIRECTORY_TARGETS.md).
 
+For observed external MCP crawler compatibility, see [Crawler Compatibility Receipt](CRAWLER_COMPATIBILITY.md).
+
 ## Evidence Contract
 
 A real market signal for this distribution test must be one of: accepted listing, listing rejection, directory click, crawler/registry fetch, inbound listing attempt, signup, paid x402 call, or payment. Drafts and local reports do not count.
