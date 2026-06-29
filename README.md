@@ -18,6 +18,8 @@ Free readiness checker: <https://ontarioprotocol.com/verify>
 
 Free owner next step: <https://ontarioprotocol.com/api/mcp-owner-next-step>
 
+Directory reviewer / endpoint-owner fit check: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
+
 ## Recommended Directory Description
 
 Ontario Protocol exposes MCP and x402 tools for verifying paid agent endpoints before agents pay. Start with free readiness and can-pay tools, then use paid trust, reputation, and listing tools only after policy allows.
@@ -43,6 +45,7 @@ This package exists to support agent/tool directory review. It is not a separate
 
 If you run an MCP or x402 endpoint and found Ontario through a directory, start here before any paid action:
 
+- public fit-check issue: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
 - owner handoff route: `GET https://ontarioprotocol.com/api/mcp-owner-next-step`
 - human owner page: <https://ontarioprotocol.com/docs/mcp-owner-paid-call>
 - free mini-check request: `POST https://ontarioprotocol.com/api/mcp-mini-check`

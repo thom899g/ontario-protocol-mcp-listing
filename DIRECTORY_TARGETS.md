@@ -51,6 +51,7 @@ Primary links:
 - Agent buyer guide: `https://ontarioprotocol.com/.well-known/agent-buyer.json`
 - Free owner next step: `https://ontarioprotocol.com/api/mcp-owner-next-step`
 - Free listing validation: `https://ontarioprotocol.com/api/x402/list-service/validate`
+- Public fit-check issue: `https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1`
 
 ## No-Approval Actions
 
