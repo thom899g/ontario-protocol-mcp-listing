@@ -25,6 +25,8 @@ Ontario Protocol helps autonomous agents and developers avoid unsafe paid API ca
 - MCP manifest: <https://ontarioprotocol.com/.well-known/mcp.json>
 - Remote MCP endpoint: <https://ontarioprotocol.com/mcp>
 - x402 manifest: <https://ontarioprotocol.com/.well-known/x402.json>
+- Cheapest paid probe: <https://ontarioprotocol.com/api/x402/reputation/demo-agent>
+- Free can-pay preflight: <https://ontarioprotocol.com/api/agent/can-pay>
 - Agent buyer guide: <https://ontarioprotocol.com/.well-known/agent-buyer.json>
 - Free verifier: <https://ontarioprotocol.com/verify>
 - Free owner handoff: <https://ontarioprotocol.com/api/mcp-owner-next-step>

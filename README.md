@@ -37,6 +37,23 @@ Ontario Protocol exposes MCP and x402 tools for verifying paid agent endpoints b
 | `list-agent` | POST | `https://ontarioprotocol.com/api/x402/list-agent` | 0.10 USDC |
 | `list-service` | POST | `https://ontarioprotocol.com/api/x402/list-service` | 0.50 USDC |
 
+## If A Paid Probe Returns HTTP 402
+
+Start with the cheapest paid proof, then use the free preflight before signing:
+
+```bash
+curl -i https://ontarioprotocol.com/api/x402/reputation/demo-agent
+curl -fsSL -X POST https://ontarioprotocol.com/api/agent/can-pay \
+  -H 'content-type: application/json' \
+  -d '{"endpoint":"https://ontarioprotocol.com/api/x402/reputation/demo-agent","max_usdc":"0.001","agent_policy":"standard"}'
+```
+
+Expected boundary:
+
+- `GET /api/x402/reputation/demo-agent` returns HTTP `402` with `Payment-Required` / `X-Payment-Required`, `quote_id`, `maxAmountRequired=1000`, `network=base`, and `payTo`.
+- The response also includes free alternatives: can-pay policy check, readiness verifier, sandbox, MCP endpoint, docs, and mini-check path.
+- A paid call should happen only after the agent policy allows USDC-on-Base settlement and the caller can store the quote/payment response for audit.
+
 ## Listing Purpose
 
 This package exists to support agent/tool directory review. It is not a separate production deployment, not a payment collector, and not a legal or financial guarantee. Ontario provides observable readiness signals; agents should still enforce their own budget, wallet, timeout, and policy controls before payment.

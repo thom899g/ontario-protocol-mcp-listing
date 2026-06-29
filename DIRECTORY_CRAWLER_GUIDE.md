@@ -40,6 +40,20 @@ For a concrete external crawler receipt, see [Crawler Compatibility Receipt](CRA
    curl -fsSL https://ontarioprotocol.com/.well-known/x402.json
    ```
 
+6. Probe the lowest-price paid endpoint without payment:
+
+   ```bash
+   curl -i https://ontarioprotocol.com/api/x402/reputation/demo-agent
+   ```
+
+7. Before signing payment, run the free can-pay preflight:
+
+   ```bash
+   curl -fsSL -X POST https://ontarioprotocol.com/api/agent/can-pay \
+     -H 'content-type: application/json' \
+     -d '{"endpoint":"https://ontarioprotocol.com/api/x402/reputation/demo-agent","max_usdc":"0.001","agent_policy":"standard"}'
+   ```
+
 ## Expected Results
 
 | Surface | Expected result |
@@ -49,6 +63,8 @@ For a concrete external crawler receipt, see [Crawler Compatibility Receipt](CRA
 | `GET /mcp` | `200` JSON discovery document |
 | `POST /mcp tools/list` | `200` JSON-RPC response with tools |
 | `/.well-known/x402.json` | `200` x402 metadata |
+| `GET /api/x402/reputation/demo-agent` | `402` x402 payment challenge with free alternatives and retry instructions |
+| `POST /api/agent/can-pay` | policy decision JSON for a supplied endpoint |
 
 ## Free-First Owner Path
 
