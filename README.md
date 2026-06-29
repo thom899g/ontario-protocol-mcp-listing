@@ -20,6 +20,8 @@ Free owner next step: <https://ontarioprotocol.com/api/mcp-owner-next-step>
 
 Directory reviewer / endpoint-owner fit check: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/new?template=endpoint_owner_fit_check.yml>
 
+Downloadable listing packet: <https://github.com/thom899g/ontario-protocol-mcp-listing/releases/download/v0.1.2/ontario-listing-packet-v0.1.2.zip>
+
 ## Fastest Buyer-Safe Path
 
 Use this path if you are an agent, directory crawler, or endpoint owner trying to decide whether Ontario is worth a real paid call:
