@@ -18,7 +18,7 @@ Free readiness checker: <https://ontarioprotocol.com/verify>
 
 Free owner next step: <https://ontarioprotocol.com/api/mcp-owner-next-step>
 
-Directory reviewer / endpoint-owner fit check: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
+Directory reviewer / endpoint-owner fit check: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/new?template=endpoint_owner_fit_check.yml>
 
 ## Fastest Buyer-Safe Path
 
@@ -33,7 +33,7 @@ Use this path if you are an agent, directory crawler, or endpoint owner trying t
 3. Run the free policy check before any wallet action:
    - `POST https://ontarioprotocol.com/api/agent/can-pay`
 4. If you own an MCP/x402 endpoint, request a free public fit check:
-   - <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
+   - <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/new?template=endpoint_owner_fit_check.yml>
 5. Only make a paid call after your own policy allows USDC-on-Base settlement and you can store the payment quote/receipt.
 
 Current boundary: Ontario has public crawler/developer-tool inspection and a self-funded `0.01 USDC` rail proof, but no verified customer paid call yet. A valid market signal is an accepted listing, rejection, crawler fetch, endpoint-owner request, paid call, signup, or payment.
@@ -80,7 +80,7 @@ This package exists to support agent/tool directory review. It is not a separate
 
 If you run an MCP or x402 endpoint and found Ontario through a directory, start here before any paid action:
 
-- public fit-check issue: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
+- public fit-check form: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/new?template=endpoint_owner_fit_check.yml>
 - owner handoff route: `GET https://ontarioprotocol.com/api/mcp-owner-next-step`
 - human owner page: <https://ontarioprotocol.com/docs/mcp-owner-paid-call>
 - free mini-check request: `POST https://ontarioprotocol.com/api/mcp-mini-check`

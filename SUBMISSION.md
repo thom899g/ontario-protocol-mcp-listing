@@ -31,7 +31,7 @@ Ontario Protocol helps autonomous agents and developers avoid unsafe paid API ca
 - Free verifier: <https://ontarioprotocol.com/verify>
 - Free owner handoff: <https://ontarioprotocol.com/api/mcp-owner-next-step>
 - Human owner page: <https://ontarioprotocol.com/docs/mcp-owner-paid-call>
-- Public fit-check issue: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
+- Public fit-check form: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/new?template=endpoint_owner_fit_check.yml>
 
 ## Category Suggestions
 

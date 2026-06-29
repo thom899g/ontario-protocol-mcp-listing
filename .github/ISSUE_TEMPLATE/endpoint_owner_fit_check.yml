@@ -1,0 +1,85 @@
+name: Endpoint-owner MCP/x402 fit check
+description: Ask for a public, free Ontario Protocol readiness check before any paid call.
+title: "[Fit check]: "
+labels:
+  - fit-check
+  - mcp
+  - x402
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if you own or review an MCP/x402 endpoint and want a public, no-secret readiness check.
+
+        Do not post wallet secrets, private API keys, account credentials, customer data, payment details, or unpublished source code.
+  - type: input
+    id: project
+    attributes:
+      label: Project or directory
+      description: Name of your endpoint, service, directory, or crawler.
+      placeholder: Example: Acme MCP Server
+    validations:
+      required: true
+  - type: input
+    id: public_url
+    attributes:
+      label: Public URL
+      description: Public homepage, docs page, listing page, or repository.
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: input
+    id: mcp_manifest
+    attributes:
+      label: MCP manifest or endpoint
+      description: Public MCP manifest or transport endpoint, if available.
+      placeholder: https://example.com/.well-known/mcp.json
+    validations:
+      required: false
+  - type: input
+    id: x402_manifest
+    attributes:
+      label: x402 manifest or paid endpoint
+      description: Public x402 manifest, 402 endpoint, or paid API endpoint, if available.
+      placeholder: https://example.com/.well-known/x402.json
+    validations:
+      required: false
+  - type: textarea
+    id: current_signal
+    attributes:
+      label: Current public signal
+      description: What evidence exists already?
+      placeholder: Crawler hit, directory listing, 402 response, issue/reply, release download, signup, or paid-call attempt.
+    validations:
+      required: true
+  - type: textarea
+    id: conversion_boundary
+    attributes:
+      label: Conversion boundary
+      description: Where are users or agents stopping?
+      placeholder: Example: x402_probe=3, paid_calls=0; directory listed us but no endpoint-owner requests.
+    validations:
+      required: true
+  - type: dropdown
+    id: desired_outcome
+    attributes:
+      label: Desired outcome
+      options:
+        - accepted listing
+        - readiness proof
+        - safer paid-call handoff
+        - endpoint-owner trust check
+        - buyer-safe x402 preflight
+        - paid-call conversion
+        - other public evidence
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Safety boundary
+      options:
+        - label: I am sharing only public, non-sensitive information.
+          required: true
+        - label: I understand this is not legal, financial, or security certification.
+          required: true
