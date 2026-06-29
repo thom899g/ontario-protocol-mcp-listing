@@ -20,6 +20,24 @@ Free owner next step: <https://ontarioprotocol.com/api/mcp-owner-next-step>
 
 Directory reviewer / endpoint-owner fit check: <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
 
+## Fastest Buyer-Safe Path
+
+Use this path if you are an agent, directory crawler, or endpoint owner trying to decide whether Ontario is worth a real paid call:
+
+1. Confirm the public manifests:
+   - MCP: <https://ontarioprotocol.com/.well-known/mcp.json>
+   - x402: <https://ontarioprotocol.com/.well-known/x402.json>
+2. Probe the cheapest paid endpoint without paying:
+   - `GET https://ontarioprotocol.com/api/x402/reputation/demo-agent`
+   - Expected: HTTP `402` payment challenge for `0.001 USDC` on Base.
+3. Run the free policy check before any wallet action:
+   - `POST https://ontarioprotocol.com/api/agent/can-pay`
+4. If you own an MCP/x402 endpoint, request a free public fit check:
+   - <https://github.com/thom899g/ontario-protocol-mcp-listing/issues/1>
+5. Only make a paid call after your own policy allows USDC-on-Base settlement and you can store the payment quote/receipt.
+
+Current boundary: Ontario has public crawler/developer-tool inspection and a self-funded `0.01 USDC` rail proof, but no verified customer paid call yet. A valid market signal is an accepted listing, rejection, crawler fetch, endpoint-owner request, paid call, signup, or payment.
+
 ## Recommended Directory Description
 
 Ontario Protocol exposes MCP and x402 tools for verifying paid agent endpoints before agents pay. Start with free readiness and can-pay tools, then use paid trust, reputation, and listing tools only after policy allows.
